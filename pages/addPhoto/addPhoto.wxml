@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="page-area">
+    <view class="down">
+      <image bindtap="upLoadImage" src="../../image/add.png"></image>
+    </view>
+    <view class="fall">
+     
+      <block wx:for="{{imageUrl}}" wx:key="index">
+       
+        <image src="{{imageUrl[index].imageUrl}}" catchtap="openPersonal" data-id="{{imageUrl[index]._id}}"></image>
+
+        <view class="modal" wx:if="{{isShowModal}}">
+        <view class="content">
+            <text class="close" bindtap="close"></text>
+            <view class="personal">
+              <view class="author">作者：{{imageUrl[index].name}}</view>
+            <view class="date">日期：{{imageUrl[index].time}}</view>
+            <button style="width:80%;height:50rpx;line-height:6px" class="btn" bindtap="deleteImage" type="warn">删除</button>
+            </view>
+          </view>
+
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

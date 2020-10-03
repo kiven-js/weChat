@@ -1,0 +1,25 @@
+.page-body{
+  /* background-color: bisque; */
+  width: 100%;
+  height: 100%;
+}
+.page-body > input,.zhuce > input{
+  border: 1px solid #eee;
+  border-radius: 10rpx;
+  padding: 5rpx 10rpx;
+  width: 70%;
+  margin: 20rpx auto;
+}
+.btn{
+  font-size: 24rpx;
+  color: #fff;
+  background-color:lightgreen;
+}
+.sign{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #eee;
+}

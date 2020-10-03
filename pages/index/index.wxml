@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="page-body">
+    <input type="text" placeholder="请输入手机号" bindinput="getphone"/>
+    <input type="text" password="password" placeholder="请输入密码" bindinput="getpwd"/>
+    <view class="zhuce" wx:if="{{!isShow}}">
+      <input type="text" placeholder="请输入姓名" bindinput="getname"/>
+      <button class="btn" bindtap="reg">用户注册</button>
+      <text class="sign" bindtap="login_a">登录</text>
+    </view>
+    <view wx:if="{{isShow}}">
+      <button class="btn" bindtap="login">用户登录</button>
+      <text class="sign" bindtap="reg_a">注册</text>
+    </view>
+  </view>
+</view>
